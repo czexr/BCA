@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+            margin: 50px;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #4CAF50;
+            color: white;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 50px;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notes</h1>
+    </header>
+    <div class="container">
+        <h2>Notes for Semester 4</span></h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Subject 1</td>
+                <td><a href="math-notes.pdf" download>Download</a></td>
+            </tr>
+            <tr>
+                <td>Subject 2</td>
+                <td><a href="physics-notes.pdf" download>Download</a></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>--- B C A ---</p>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("semester").innerText = params.get("semester");
+    </script>
+</body>
+</html>
